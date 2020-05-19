@@ -27,7 +27,7 @@ public class UserEvent_Test {
 		
 		//String path = System.getProperty("user.dir");
 		//System.setProperty("webdriver.chrome.driver", path+"\\test-output\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\a\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "$env:ChromeWebDriver");
 		//System.setProperty("webdriver.chrome.driver", "\\desktop\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
