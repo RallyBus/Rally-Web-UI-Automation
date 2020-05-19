@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="132464" started-at="2020-05-18T17:57:23 IST" finished-at="2020-05-18T17:59:35 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="132464" started-at="2020-05-18T17:57:23 IST" finished-at="2020-05-18T17:59:35 IST">
+      <class name="com.qa.rwue.TestCases.UserEvent_Test">
+        <test-method status="PASS" signature="Verify_Userevent_G()[pri:0, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G" duration-ms="132419" started-at="2020-05-18T17:57:23 IST" finished-at="2020-05-18T17:59:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Userevent_G -->
+      </class> <!-- com.qa.rwue.TestCases.UserEvent_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
