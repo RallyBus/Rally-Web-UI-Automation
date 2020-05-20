@@ -26,6 +26,7 @@ public class UserEvent_Test {
 	public void Verify_Userevent_G() throws InterruptedException {
 		
 		//String path = System.getProperty("user.dir");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", path+"\\test-output\\chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", "$env:chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver", "D:/a/_temp\\chromedriver.exe");

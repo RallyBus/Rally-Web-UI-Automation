@@ -52,11 +52,11 @@ public class UserEvent_SPA_G {
 		
 		By One_Side = By.xpath("//div[@class='tab__item ' and contains(text(),'One way trip')]");
 		By Outbound_One = By.xpath("//div[@class='button current-date']");
-		By Sel_date = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'27')]");
+		By Sel_date = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'28')]");
 		By Round_Side = By.xpath("//div[@class='tab__item ' and contains(text(),'Round trip')]");
 		By Return_Date = By.xpath("//div[@id='returnDateTime']/div/div/div[@class='button current-date']");
 		By Nxt_mnth = By.xpath("//button[@class='next']");
-		By Sel_date1 = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'26')]");
+		By Sel_date1 = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'29')]");
 		By Add_Contct_Info = By.xpath("//div[@class='button--parent right']/button[@class='button button--yellow']");
 		
 		/**
@@ -78,7 +78,7 @@ public class UserEvent_SPA_G {
 		By Rally_nt_lstd = By.xpath("//span[@class='sliderswitchbtn round']");
 		By Crowdpowered = By.xpath("//div[@class='tab__item ' and contains(text(),'Crowdpowered')]");
 		By Review = By.xpath("//div[@class='button--parent right']/button[@class='button button--yellow']");
-		By Final_Step = By.xpath("//div[@class='button--parent right']/button[@class='button button--yellow']");
+		By Final_Step = By.xpath("//div[@class='button--parent right nicejob-btn']/button[@class='button button--yellow']");
 		
 
 	public UserEvent_SPA_G(WebDriver driver) {
@@ -94,7 +94,7 @@ public class UserEvent_SPA_G {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(New_Dest).click();
 		Thread.sleep(5000);
-				
+		System.out.println("This Guest method run completed");
 	}
 	
 	public void Where_We_going(String rally_from, String rally_from_1, String rally_to) throws InterruptedException {
@@ -122,7 +122,7 @@ public class UserEvent_SPA_G {
 		Thread.sleep(5000);
 		driver.findElement(Add_times).click();
 		Thread.sleep(5000);
-		
+		System.out.println("This Where_We_going method run completed");
 	}
 	
 	public void Where_we_going_time() throws InterruptedException {
@@ -140,7 +140,7 @@ public class UserEvent_SPA_G {
 		driver.findElement(Sel_date1).click();
 		driver.findElement(Add_Contct_Info).click();
 		Thread.sleep(5000);
-		
+		System.out.println("This Where_we_going_time method run completed");
 	}
 	
 	public void How_Stay_touch(String name_rally, String user_name, String user_email, String user_phone) throws InterruptedException {
@@ -161,7 +161,7 @@ public class UserEvent_SPA_G {
 		Thread.sleep(5000);
 		driver.findElement(Chs_Fund_Mthd).click();
 		Thread.sleep(5000);
-		
+		System.out.println("This How_Stay_touch method run completed");
 	}
 	
 	public void How_fund_trip() throws InterruptedException {
