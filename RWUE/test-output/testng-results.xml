@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="131887" started-at="2020-05-20T12:39:55 IST" finished-at="2020-05-20T12:42:07 IST">
+  <suite name="Default suite" duration-ms="397737" started-at="2020-05-21T14:54:39 IST" finished-at="2020-05-21T15:01:17 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="131887" started-at="2020-05-20T12:39:55 IST" finished-at="2020-05-20T12:42:07 IST">
+    <test name="Default test" duration-ms="397737" started-at="2020-05-21T14:54:39 IST" finished-at="2020-05-21T15:01:17 IST">
       <class name="com.qa.rwue.TestCases.UserEvent_Test">
-        <test-method status="PASS" signature="Verify_Userevent_G()[pri:0, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G" duration-ms="131840" started-at="2020-05-20T12:39:56 IST" finished-at="2020-05-20T12:42:07 IST">
+        <test-method status="PASS" signature="Verify_Userevent_G_Case1()[pri:0, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case1" duration-ms="138008" started-at="2020-05-21T14:54:39 IST" finished-at="2020-05-21T14:56:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Userevent_G -->
+        </test-method> <!-- Verify_Userevent_G_Case1 -->
+        <test-method status="PASS" signature="Verify_Userevent_G_Case2()[pri:1, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case2" duration-ms="129693" started-at="2020-05-21T14:56:57 IST" finished-at="2020-05-21T14:59:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Userevent_G_Case2 -->
+        <test-method status="PASS" signature="Verify_Userevent_G_Case3()[pri:2, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case3" duration-ms="129972" started-at="2020-05-21T14:59:07 IST" finished-at="2020-05-21T15:01:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Userevent_G_Case3 -->
       </class> <!-- com.qa.rwue.TestCases.UserEvent_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

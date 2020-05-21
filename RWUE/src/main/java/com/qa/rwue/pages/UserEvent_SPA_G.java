@@ -26,6 +26,8 @@ import org.openqa.selenium.interactions.Actions;
 public class UserEvent_SPA_G {
 
 		WebDriver driver;
+		int date1 = 28;
+		int date2 = 29;
 
 		/**
 		 * Locators for Method As_Guest
@@ -52,11 +54,11 @@ public class UserEvent_SPA_G {
 		
 		By One_Side = By.xpath("//div[@class='tab__item ' and contains(text(),'One way trip')]");
 		By Outbound_One = By.xpath("//div[@class='button current-date']");
-		By Sel_date = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'28')]");
+		By Sel_date = By.xpath("//button[@class='day chosen']/div[@class='number' and contains(text(),'"+date1+"')]");
 		By Round_Side = By.xpath("//div[@class='tab__item ' and contains(text(),'Round trip')]");
 		By Return_Date = By.xpath("//div[@id='returnDateTime']/div/div/div[@class='button current-date']");
 		By Nxt_mnth = By.xpath("//button[@class='next']");
-		By Sel_date1 = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'29')]");
+		By Sel_date1 = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'"+date2+"')]");
 		By Add_Contct_Info = By.xpath("//div[@class='button--parent right']/button[@class='button button--yellow']");
 		
 		/**
@@ -130,11 +132,13 @@ public class UserEvent_SPA_G {
 		driver.findElement(One_Side).click();
 		Thread.sleep(5000);
 		driver.findElement(Outbound_One).click();
+		driver.findElement(Nxt_mnth).click();
 		Thread.sleep(5000);
 		driver.findElement(Sel_date).click();
 		driver.findElement(Round_Side).click();
 		Thread.sleep(5000);
 		driver.findElement(Return_Date).click();
+		driver.findElement(Nxt_mnth).click();
 		driver.findElement(Nxt_mnth).click();
 		Thread.sleep(5000);
 		driver.findElement(Sel_date1).click();
