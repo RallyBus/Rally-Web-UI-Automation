@@ -96,7 +96,7 @@ public class UserEvent_SPA_G {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(New_Dest).click();
 		Thread.sleep(5000);
-		System.out.println("This Guest method run completed");
+		System.out.println("Guest method run completed");
 	}
 	
 	public void Where_We_going(String rally_from, String rally_from_1, String rally_to) throws InterruptedException {
@@ -124,7 +124,7 @@ public class UserEvent_SPA_G {
 		Thread.sleep(5000);
 		driver.findElement(Add_times).click();
 		Thread.sleep(5000);
-		System.out.println("This Where_We_going method run completed");
+		System.out.println("Where_We_going method run completed");
 	}
 	
 	public void Where_we_going_time() throws InterruptedException {
@@ -138,13 +138,15 @@ public class UserEvent_SPA_G {
 		driver.findElement(Round_Side).click();
 		Thread.sleep(5000);
 		driver.findElement(Return_Date).click();
+		Thread.sleep(5000);
 		driver.findElement(Nxt_mnth).click();
+		Thread.sleep(5000);
 		driver.findElement(Nxt_mnth).click();
 		Thread.sleep(5000);
 		driver.findElement(Sel_date1).click();
 		driver.findElement(Add_Contct_Info).click();
 		Thread.sleep(5000);
-		System.out.println("This Where_we_going_time method run completed");
+		System.out.println("Where_we_going_time method run completed");
 	}
 	
 	public void How_Stay_touch(String name_rally, String user_name, String user_email, String user_phone) throws InterruptedException {
@@ -165,7 +167,7 @@ public class UserEvent_SPA_G {
 		Thread.sleep(5000);
 		driver.findElement(Chs_Fund_Mthd).click();
 		Thread.sleep(5000);
-		System.out.println("This How_Stay_touch method run completed");
+		System.out.println("How_Stay_touch method run completed");
 	}
 	
 	public void How_fund_trip() throws InterruptedException {
@@ -193,6 +195,7 @@ public class UserEvent_SPA_G {
         driver.findElement(Review).click();
         Thread.sleep(5000);
         driver.findElement(Final_Step).click();
+        System.out.println("How_fund_trip method run completed");
 		
 	}
 	
