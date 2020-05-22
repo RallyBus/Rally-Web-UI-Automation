@@ -3,6 +3,9 @@
  */
 package com.qa.rwue.pages;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -26,8 +29,15 @@ import org.openqa.selenium.interactions.Actions;
 public class UserEvent_SPA_G {
 
 		WebDriver driver;
-		int date1 = 28;
-		int date2 = 29;
+		LocalDate date1 =  LocalDate.now().plusDays(7);
+		int Date1 = date1.getDayOfMonth();
+		
+		/*SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+		Calendar cal = Calendar.getInstance();
+		
+		String newDate = sdf.format(cal.getTime());*/
+		LocalDate date2 = LocalDate.now().plusDays(1);
+		int Date2 = date2.getDayOfMonth();
 
 		/**
 		 * Locators for Method As_Guest
@@ -54,11 +64,11 @@ public class UserEvent_SPA_G {
 		
 		By One_Side = By.xpath("//div[@class='tab__item ' and contains(text(),'One way trip')]");
 		By Outbound_One = By.xpath("//div[@class='button current-date']");
-		By Sel_date = By.xpath("//button[@class='day chosen']/div[@class='number' and contains(text(),'"+date1+"')]");
+		By Sel_date = By.xpath("//button[@class='day chosen']/div[@class='number' and contains(text(),'"+Date1+"')]");
 		By Round_Side = By.xpath("//div[@class='tab__item ' and contains(text(),'Round trip')]");
 		By Return_Date = By.xpath("//div[@id='returnDateTime']/div/div/div[@class='button current-date']");
 		By Nxt_mnth = By.xpath("//button[@class='next']");
-		By Sel_date1 = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'"+date2+"')]");
+		By Sel_date1 = By.xpath("//button[@class='day ']/div[@class='number' and contains(text(),'"+Date2+"')]");
 		By Add_Contct_Info = By.xpath("//div[@class='button--parent right']/button[@class='button button--yellow']");
 		
 		/**
@@ -97,6 +107,8 @@ public class UserEvent_SPA_G {
 		driver.findElement(New_Dest).click();
 		Thread.sleep(5000);
 		System.out.println("Guest method run completed");
+		System.out.println(Date1);
+		System.out.println(Date2);
 	}
 	
 	public void Where_We_going(String rally_from, String rally_from_1, String rally_to) throws InterruptedException {

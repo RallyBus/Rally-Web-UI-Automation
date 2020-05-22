@@ -22,7 +22,7 @@ import com.qa.rwue.pages.UserEvent_SPA_G;
 
 public class UserEvent_Test {
 
-	@Test
+	@Test(priority=1)
 	public void Verify_Userevent_G_Case1() throws InterruptedException {
 		
 		//String path = System.getProperty("user.dir");
@@ -55,7 +55,7 @@ public class UserEvent_Test {
 		driver.quit();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	public void Verify_Userevent_G_Case2() throws InterruptedException {
 	
 		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
@@ -84,7 +84,7 @@ public class UserEvent_Test {
 		driver.quit();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=3)
 	public void Verify_Userevent_G_Case3() throws InterruptedException {
 	
 		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
