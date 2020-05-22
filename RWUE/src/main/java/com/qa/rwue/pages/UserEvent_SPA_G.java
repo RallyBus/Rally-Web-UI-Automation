@@ -147,6 +147,7 @@ public class UserEvent_SPA_G {
 		driver.findElement(Nxt_mnth).click();
 		Thread.sleep(5000);
 		driver.findElement(Sel_date).click();
+		Thread.sleep(5000);
 		driver.findElement(Round_Side).click();
 		Thread.sleep(5000);
 		driver.findElement(Return_Date).click();
@@ -156,6 +157,7 @@ public class UserEvent_SPA_G {
 		driver.findElement(Nxt_mnth).click();
 		Thread.sleep(5000);
 		driver.findElement(Sel_date1).click();
+		Thread.sleep(5000);
 		driver.findElement(Add_Contct_Info).click();
 		Thread.sleep(5000);
 		System.out.println("Where_we_going_time method run completed");

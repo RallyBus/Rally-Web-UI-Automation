@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="423038" started-at="2020-05-22T16:50:02 IST" finished-at="2020-05-22T16:57:05 IST">
+  <suite name="Default suite" duration-ms="440818" started-at="2020-05-22T17:11:24 IST" finished-at="2020-05-22T17:18:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="423038" started-at="2020-05-22T16:50:02 IST" finished-at="2020-05-22T16:57:05 IST">
+    <test name="Default test" duration-ms="440818" started-at="2020-05-22T17:11:24 IST" finished-at="2020-05-22T17:18:45 IST">
       <class name="com.qa.rwue.TestCases.UserEvent_Test">
-        <test-method status="PASS" signature="Verify_Userevent_G_Case1()[pri:1, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case1" duration-ms="141574" started-at="2020-05-22T16:50:02 IST" finished-at="2020-05-22T16:52:23 IST">
+        <test-method status="PASS" signature="Verify_Userevent_G_Case1()[pri:1, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case1" duration-ms="145952" started-at="2020-05-22T17:11:24 IST" finished-at="2020-05-22T17:13:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Userevent_G_Case1 -->
-        <test-method status="PASS" signature="Verify_Userevent_G_Case2()[pri:2, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case2" duration-ms="140237" started-at="2020-05-22T16:52:23 IST" finished-at="2020-05-22T16:54:44 IST">
+        <test-method status="PASS" signature="Verify_Userevent_G_Case2()[pri:2, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case2" duration-ms="150165" started-at="2020-05-22T17:13:50 IST" finished-at="2020-05-22T17:16:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Userevent_G_Case2 -->
-        <test-method status="PASS" signature="Verify_Userevent_G_Case3()[pri:3, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case3" duration-ms="141174" started-at="2020-05-22T16:54:44 IST" finished-at="2020-05-22T16:57:05 IST">
+        <test-method status="PASS" signature="Verify_Userevent_G_Case3()[pri:3, instance:com.qa.rwue.TestCases.UserEvent_Test@cd2dae5]" name="Verify_Userevent_G_Case3" duration-ms="144641" started-at="2020-05-22T17:16:20 IST" finished-at="2020-05-22T17:18:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Userevent_G_Case3 -->
