@@ -5,9 +5,7 @@
     <classes>
       <class name="com.qa.rwue.TestCases.UserEvent_Test">
         <methods>
-          <include name="Verify_Userevent_G_Case3"/>
-          <include name="Verify_Userevent_G_Case1"/>
-          <include name="Verify_Userevent_G_Case2"/>
+          <include name="Verify_booking_SPA_L"/>
         </methods>
       </class> <!-- com.qa.rwue.TestCases.UserEvent_Test -->
     </classes>

@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.ITestResult;
 
 /**
  *  @author Pratyush
@@ -46,6 +47,7 @@ public class UserEvent_SPA_G {
 		By Btn_Guest = By.xpath("//button[@class='splash__button']");
 		By Srch_bar = By.id("search__rally-ip");
 		By New_Dest = By.xpath("//button[@class='button button--dark']");
+		
 		
 		/**
 		 * Locators for Method Where_We_going
@@ -92,7 +94,7 @@ public class UserEvent_SPA_G {
 		By Review = By.xpath("//div[@class='button--parent right']/button[@class='button button--yellow']");
 		By Final_Step = By.xpath("//div[@class='button--parent right nicejob-btn']/button[@class='button button--yellow']");
 		
-
+		
 	public UserEvent_SPA_G(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -102,6 +104,7 @@ public class UserEvent_SPA_G {
 		driver.findElement(Btn_Guest).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(Srch_bar).click();
+		Thread.sleep(5000);
 		driver.findElement(Srch_bar).sendKeys(srch_name);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(New_Dest).click();
@@ -212,7 +215,6 @@ public class UserEvent_SPA_G {
         System.out.println("How_fund_trip method run completed");
 		
 	}
-	
 	
 	
 }

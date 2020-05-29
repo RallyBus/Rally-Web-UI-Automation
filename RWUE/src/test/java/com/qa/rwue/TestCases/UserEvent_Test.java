@@ -5,13 +5,11 @@ package com.qa.rwue.TestCases;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
+import com.qa.rwue.pages.Booking_SPA_L;
 import com.qa.rwue.pages.UserEvent_SPA_G;
 
 /**
@@ -20,18 +18,15 @@ import com.qa.rwue.pages.UserEvent_SPA_G;
  *  
  */
 
-public class UserEvent_Test {
 
+public class UserEvent_Test {
+	
 	@Test(priority=1)
 	public void Verify_Userevent_G_Case1() throws InterruptedException {
 		
-		//String path = System.getProperty("user.dir");
-		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", path+"\\test-output\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "$env:chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "D:/a/_temp\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "\\desktop\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rally-bolide-dev.azurewebsites.net/userevent/");
@@ -58,8 +53,8 @@ public class UserEvent_Test {
 	@Test(priority=2)
 	public void Verify_Userevent_G_Case2() throws InterruptedException {
 	
-		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -87,14 +82,16 @@ public class UserEvent_Test {
 	@Test(priority=3)
 	public void Verify_Userevent_G_Case3() throws InterruptedException {
 	
-		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rally-bolide-dev.azurewebsites.net/userevent/");
 		
 		//For Selecting Date to make name dynamic.
+		
+		
 		DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
 		Date dateObj = new Date();
 		
@@ -113,9 +110,25 @@ public class UserEvent_Test {
 		driver.quit();
 	}
 	
-	public void Verify_Userevent_L() {
+	@Test(priority=1)
+	public void Verify_booking_SPA_L() throws InterruptedException {
 		
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://rally-bolide-dev.azurewebsites.net/Search");
+		
+		Booking_SPA_L booking_spa_l = new Booking_SPA_L(driver);
+		
+		booking_spa_l.Search_Rally_point("this is");
+		
+		booking_spa_l.Add_rides("wildnet1@rallybus.net","wildnet1@rallybus.net");
+		
+		booking_spa_l.Review_booking("4111111111111111","05/32","123");
+		
+		driver.quit();
 	}
-	
-	
 }
