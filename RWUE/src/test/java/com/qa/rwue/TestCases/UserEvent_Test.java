@@ -24,8 +24,8 @@ public class UserEvent_Test {
 	@Test(priority=1)
 	public void Verify_Userevent_G_Case1() throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -53,8 +53,8 @@ public class UserEvent_Test {
 	@Test(priority=2)
 	public void Verify_Userevent_G_Case2() throws InterruptedException {
 	
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -82,8 +82,8 @@ public class UserEvent_Test {
 	@Test(priority=3)
 	public void Verify_Userevent_G_Case3() throws InterruptedException {
 	
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -113,8 +113,8 @@ public class UserEvent_Test {
 	@Test(priority=1)
 	public void Verify_booking_SPA_L() throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\a\\1\\s\\RWUE\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
