@@ -21,6 +21,7 @@ import com.qa.rwue.pages.UserEvent_SPA_G;
 
 public class UserEvent_Test {
 	
+	
 	@Test(priority=1)
 	public void Verify_Userevent_G_Case1() throws InterruptedException {
 		
@@ -110,7 +111,8 @@ public class UserEvent_Test {
 		driver.quit();
 	}
 	
-	@Test(priority=1)
+	
+	@Test(priority=4)
 	public void Verify_booking_SPA_L() throws InterruptedException {
 		
 		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");

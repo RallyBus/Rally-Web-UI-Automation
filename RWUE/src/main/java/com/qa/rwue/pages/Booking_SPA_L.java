@@ -66,7 +66,7 @@ public class Booking_SPA_L {
 		Thread.sleep(5000);
 		driver.findElement(Slct_book).click();
 		System.out.println("Method Search_Rally_point completed");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 	}
 	
 	public void Add_rides(String uname, String pass) throws InterruptedException{
